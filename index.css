@@ -1,0 +1,385 @@
+/* define font */
+@font-face {
+    font-family: 'Urbanist';
+    src: url(./resources/fonts/Urbanist-Thin.ttf) format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(./resources/fonts/Urbanist-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(./resources/fonts/Urbanist-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(./resources/fonts/Urbanist-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(./resources/fonts/Urbanist-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(./resources/fonts/Urbanist-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+/* part 1 */
+.part1 {
+    position: absolute;
+    width: 100%;
+    height: 899px;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(180deg, #D7D8F9 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.86;
+}
+
+/* nav */
+.nav {
+    position: absolute;
+    width: 100%;
+    height: 74px;
+    left: 0;
+    top: 0;
+}
+
+/* light */
+.light {
+    position: absolute;
+    width: 177.13px;
+    height: 42px;
+    left: 8.3%;
+    top: 16px;
+}
+
+/* nav tab */
+.nav-tab {
+    position: absolute;
+    top: 25px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.nav-tab a {
+    text-decoration: none;
+    color: black;
+}
+
+/* sign button */
+.sign {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 87px;
+    height: 42px;
+    left: 85.6%;
+    top: 16px;
+    padding: 10px 10px 10px 20px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    border: 1px solid black;
+    border-radius: 21px;
+}
+
+/* title */
+.intro {
+    position: absolute;
+    width: 58.3%;
+    height: 320px;
+    left: 20.83%;
+    top: 168px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.intro-title {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.intro-description {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #696678;
+}
+
+.intro button {
+    padding: 20px 30px;
+
+    width: 200px;
+    height: 62px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: white;
+
+    background: black;
+    border-radius: 32px;
+    border-color: black;
+}
+
+.NFT-list {
+    /* position: absolute;
+    width: 98.3%;
+    height: 366px;
+    left: auto;
+    top: 520px; */
+    width: 1416px;
+    height: 366px;
+    margin: 520px auto auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 0 12px;
+}
+
+.NFT {
+    width: 216px;
+    height: 244px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.NFT-name {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    margin: 8px;
+}
+
+.NFT-image {
+    margin-left: 8px;
+}
+
+.NFT-image img {
+    width: 200px;
+    height: 200px;
+}
+
+.part2 {
+    width: 83.3%;
+    height: 646px;
+    margin: 1034px auto auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    text-align: center;
+}
+
+.part2-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.part2-list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.part2-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 270px;
+}
+
+.p2-ele-image img {
+    width: 270px;
+    height: 160px;
+}
+
+.p2-ele-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.p2-ele-des {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #696678;
+}
+
+.part3 {
+    width: 100%;
+    height: 842px;
+    margin: auto;
+    background-color: #FAFAFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+}
+
+.part3-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.swiper {
+    width: 87.5%;
+    height: 550px;
+    background-color: #F0F0F5;
+    border-radius: 32px;
+}
+
+.part4 {
+    width: 79.2%;
+    height: 623px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+}
+
+.part4-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.part4-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.part4-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.part4-left img {
+    width: 182px;
+    height: 48px;
+}
+
+.part4-left span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6953EF;
+
+    background: #F5F5F6;
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #696679;
+}
+
+.part4-left .coming {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.part4-left .coming img {
+    width: 60px;
+    height: 60px;
+}
+
+.part4-right img {
+    width: 598px;
+    height: 489px;
+}
+
+.part5 {
+    width: 100%;
+    height: 444px;
+    margin: auto;
+
+    background-color: #FAFAFF;
+}
+
+.part5-content {
+    position: absolute;
+    width: 55%;
+    height: 244px;
+    left: 10.4%;
+    top: 100px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+}
+
+.part5-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
