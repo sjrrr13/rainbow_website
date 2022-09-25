@@ -159,7 +159,7 @@
     height: 366px;
     left: auto;
     top: 520px; */
-    width: 1416px;
+    width: 98.3%;
     height: 366px;
     margin: 520px auto auto;
 
@@ -335,12 +335,13 @@
     border-radius: 16px;
 }
 
+/* TODO */
 .list {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
 
-    color: #696679;
+    color: #686678;
 }
 
 .part4-left .coming {
@@ -368,7 +369,7 @@
 }
 
 .part5-content {
-    position: absolute;
+    position: relative;
     width: 55%;
     height: 244px;
     left: 10.4%;
@@ -382,4 +383,44 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+}
+
+.part6 {
+    width: 87.5%;
+    height: 274px;
+    margin: 86px auto auto;
+
+    background-color: #04001D;
+    border-radius: 32px;
+    font-family: 'Urbanist';
+    font-style: normal;
+}
+
+.part6-title {
+    position: relative;
+    width: 50%;
+    top: 60px;
+    left: 25.9%;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: white;
+}
+
+.part6-content {
+    position: relative;
+    width: 64%;
+    height: 90px;
+    top: 154px;
+    left: 13.4%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part6-content img {
+    width: 17%;
 }
