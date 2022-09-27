@@ -35,6 +35,11 @@
     font-weight: 700;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
 /* part 1 */
 .part1 {
     position: absolute;
@@ -101,6 +106,8 @@
 
     border: 1px solid black;
     border-radius: 21px;
+
+    cursor: pointer;
 }
 
 /* title */
@@ -201,12 +208,11 @@
 
 .part2 {
     width: 83.3%;
-    height: 646px;
     margin: 1034px auto auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     font-family: 'Urbanist';
@@ -218,10 +224,12 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+    margin-bottom: 100px;
 }
 
 .part2-list {
     width: 100%;
+    margin-bottom: 120px;
 
     display: flex;
     flex-direction: row;
@@ -233,7 +241,7 @@
 .part2-element {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 
     width: 270px;
@@ -242,16 +250,18 @@
 .p2-ele-image img {
     width: 270px;
     height: 160px;
+    margin-bottom: 48px;
 }
 
 .p2-ele-title {
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 24px;
 }
 
 .p2-ele-des {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     line-height: 22px;
 
@@ -266,7 +276,7 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 
     font-family: 'Urbanist';
@@ -274,26 +284,86 @@
 }
 
 .part3-title {
+    margin: 60px auto;
+
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
 }
 
-.swiper {
+.wrapper {
     width: 87.5%;
     height: 550px;
     background-color: #F0F0F5;
     border-radius: 32px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
 }
 
-.part4 {
+.wrapper-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.wrapper-left {
+    width: 31.1%;
+    margin: 60px 0 auto 3.7%;
+}
+
+.wrapper-btn {
+    margin-top: 24px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    color: white;
+    background-color: #04001D;
+    border-radius: 32px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.wrapper-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 48px;
+}
+
+.wrapper-right {
+    display: flex;
+    align-items: center;
+    margin: 143px auto auto 50px;
+}
+
+.wrapper-right img:first-child {
+    width: 380px;
+    height: 250px;
+}
+
+.wrapper-right img:last-child {
+    width: 288px;
+    height: 326px;
+    margin-left: 30px;
+}
+
+/* .part4 {
+    margin: auto;   
+} */
+
+.part4-content {
     width: 79.2%;
     height: 623px;
-    margin: auto;
+    margin: 110px auto 85px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     font-family: 'Urbanist';
@@ -306,7 +376,8 @@
     line-height: 48px;
 }
 
-.part4-content {
+.part4-des {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -315,16 +386,18 @@
 .part4-left {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     align-items: flex-start;
 }
 
-.part4-left img {
+.part4-left>img {
+    margin: 44px 0 48px;
     width: 182px;
     height: 48px;
 }
 
 .part4-left span {
+    margin-top: 24px;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
@@ -337,11 +410,30 @@
 
 /* TODO */
 .list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    margin-bottom: 24px;
+}
+
+.list-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.list-content {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-
-    color: #686678;
+    color: #696678;
 }
 
 .part4-left .coming {
@@ -353,6 +445,7 @@
 .part4-left .coming img {
     width: 60px;
     height: 60px;
+    margin: 24px 32px 0 0;
 }
 
 .part4-right img {
@@ -361,19 +454,23 @@
 }
 
 .part5 {
-    width: 100%;
+    /* width: 100%; */
     height: 444px;
     margin: auto;
+    padding-left: 10.4%;
 
     background-color: #FAFAFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .part5-content {
-    position: relative;
-    width: 55%;
+    /* position: relative; */
+    /* width: 100%; */
     height: 244px;
-    left: 10.4%;
-    top: 100px;
+    /* left: 10.4%; */
+    /* top: 100px; */
 
     font-family: 'Urbanist';
     font-style: normal;
@@ -383,6 +480,7 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 47px;
 }
 
 .part6 {
@@ -394,26 +492,32 @@
     border-radius: 32px;
     font-family: 'Urbanist';
     font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .part6-title {
-    position: relative;
-    width: 50%;
-    top: 60px;
-    left: 25.9%;
+    /* position: relative; */
+    /* width: 50%; */
+    /* top: 60px; */
+    /* left: 25.9%; */
 
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: white;
+
+    margin-bottom: 42px;
 }
 
 .part6-content {
-    position: relative;
-    width: 64%;
-    height: 90px;
-    top: 154px;
-    left: 13.4%;
+    /* position: relative; */
+    width: 73.2%;
+    /* top: 154px; */
+    /* left: 13.4%; */
 
     display: flex;
     flex-direction: row;
@@ -422,5 +526,54 @@
 }
 
 .part6-content img {
-    width: 17%;
+    height: 60px;
+}
+
+.footer {
+    width: 64.9%;
+    height: 110px;
+    margin: 88px auto 90px 8.3%;
+
+    font-family: 'Urbanist';
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content img {
+    width: 200px;
+}
+
+.footer-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 52.9%;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.footer-tab a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright {
+    color: #9B99A4;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
 }
