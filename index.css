@@ -96,7 +96,7 @@ button {
     height: 42px;
     left: 85.6%;
     top: 16px;
-    padding: 10px 10px 10px 20px;
+    padding: 10px;
 
     font-family: 'Urbanist';
     font-style: normal;
@@ -166,13 +166,12 @@ button {
     height: 366px;
     left: auto;
     top: 520px; */
-    width: 98.3%;
     height: 366px;
     margin: 520px auto auto;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
     padding: 0 12px;
@@ -181,10 +180,15 @@ button {
 .NFT {
     width: 216px;
     height: 244px;
+    margin-left: 1.6%;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+}
+
+.NFT:first-child {
+    margin-left: 0;
 }
 
 .NFT-name {
@@ -293,7 +297,6 @@ button {
 
 .wrapper {
     width: 87.5%;
-    height: 550px;
     background-color: #F0F0F5;
     border-radius: 32px;
 
@@ -304,18 +307,26 @@ button {
 .wrapper-item {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90.5%;
+    margin: 60px auto 81px;
 }
 
 .wrapper-left {
-    width: 31.1%;
-    margin: 60px 0 auto 3.7%;
+    width: 34.4%;
+}
+
+.wrapper-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 48px;
 }
 
 .wrapper-btn {
     margin-top: 24px;
-    box-sizing: border-box;
     padding: 20px 30px;
     color: white;
     background-color: #04001D;
@@ -328,28 +339,29 @@ button {
     line-height: 22px;
 }
 
-.wrapper-title {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 38px;
-    margin-bottom: 48px;
+.wrapper-img1 {
+    width: 33.3%;
 }
 
-.wrapper-right {
+.wrapper-img2 {
+    width: 25.3%;
+}
+
+#item5 {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wrapper-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin: 143px auto auto 50px;
 }
 
-.wrapper-right img:first-child {
-    width: 380px;
-    height: 250px;
-}
-
-.wrapper-right img:last-child {
-    width: 288px;
-    height: 326px;
-    margin-left: 30px;
+.wrapper-imgs img {
+    width: 31.5%;
 }
 
 /* .part4 {

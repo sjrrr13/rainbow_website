@@ -20,7 +20,7 @@
             <div class="nav-tab" style="left: 75.49%;">
                 <a href="#">Contact us</a>
             </div>
-            <div class="sign">Sign in</div>
+            <button class="sign" onclick="">Sign in</button>
         </div>
         <div class="intro">
             <span class="intro-title">
@@ -165,7 +165,7 @@
             NFTRainbow Can Help
         </div>
         <div class="wrapper">
-            <div class="wrapper-item" id="item1">
+            <div class="wrapper-item" id="item1" style="display: none;">
                 <div class="wrapper-left">
                     <div class="wrapper-title">
                         NFT Data Queries
@@ -195,50 +195,116 @@
                     <!-- TODO -->
                     <button class="wrapper-btn" onclick="">Learn from docs</button>
                 </div>
-                <div class="wrapper-right">
-                    <img src="./resources/images/easy-mint.png" alt="NFT Data Queries" />
-                    <img src="./resources/images/bayc1.png" alt="BAYC" />
-                </div>
+                <img class="wrapper-img1" src="./resources/images/nft-query.png" alt="NFT Data Queries" />
+                <img class="wrapper-img2" src="./resources/images/bayc1.png" alt="BAYC" />
             </div>
+
             <div class="wrapper-item" id="item2" style="display: none;">
-                <div class="wrapper-title">
-                    Easy Mint NFTs
-                </div>
-                <div class="list">
-                    <div class="list-item">
-                        <img src="./resources/images/list-tag.png" alt="list-tag" />
-                        <div class="list-content">
-                            No previous blockchain experience needed-easily & quickly mint ERC721 or ERC1155 NFTs as
-                            needed.
+                <div class="wrapper-left">
+                    <div class="wrapper-title">
+                        Easy Mint NFTs
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                No previous blockchain experience needed-easily & quickly mint ERC721 or ERC1155 NFTs as
+                                needed.
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                Mint API with simple calls and high performance performance so you can build great
+                                products
+                                Also for Web2 users. </div>
+                        </div>
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                Manage your NFTs with tracking, update, burn and transfer functionality. </div>
                         </div>
                     </div>
-                    <div class="list-item">
-                        <img src="./resources/images/list-tag.png" alt="list-tag" />
-                        <div class="list-content">
-                            Mint API with simple calls and high performance performance so you can build great products
-                            Also for Web2 users. </div>
-                    </div>
-                    <div class="list-item">
-                        <img src="./resources/images/list-tag.png" alt="list-tag" />
-                        <div class="list-content">
-                            Manage your NFTs with tracking, update, burn and transfer functionality. </div>
-                    </div>
-                </div>
-                <div>
                     <!-- TODO -->
                     <button class="wrapper-btn" onclick="">Learn from docs</button>
                 </div>
-                <img class="swiper-img1" src="./resources/images/easy-mint.png" alt="NFT Data Queries" />
-                <img class="swiper-img2" src="./resources/images/bayc1.png" alt="BAYC" />
+                <img class="wrapper-img1" src="./resources/images/easy-mint.png" alt="Easy Mint NFT" />
+                <img class="wrapper-img2" src="./resources/images/bayc2.png" alt="BAYC" />
             </div>
+
             <div class="wrapper-item" id="item3" style="display: none;">
-
+                <div class="wrapper-left">
+                    <div class="wrapper-title">
+                        Smart Contracts Made Simple
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                Easily mint your NFTs on Blockchain without writing a single line of Solidity code.
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                Rich features : metadata customization, whitelisting, Airdrops, pre-sale, dynamic
+                                pricing, etc. </div>
+                        </div>
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                Build NFT collections, drops, token gating, marketplaces, DAOs, creator tools,
+                                play-to-earn games, community rewards, etc. </div>
+                        </div>
+                    </div>
+                    <!-- TODO -->
+                    <button class="wrapper-btn" onclick="">Learn from docs</button>
+                </div>
+                <img class="wrapper-img1" src="./resources/images/easy-file.png" alt="Smart Contracts" />
+                <img class="wrapper-img2" src="./resources/images/bayc3.png" alt="BAYC" />
             </div>
+
             <div class="wrapper-item" id="item4" style="display: none;">
-
+                <div class="wrapper-left">
+                    <div class="wrapper-title">
+                        NFT Resource & Metadata Hosting
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                Provide various types of storage services including: centralized storage, cloud object
+                                storage services, IPFS.
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                Users can comprehensively consider the selection scheme based on various factors such as
+                                actual product demand, cost, and access speed. </div>
+                        </div>
+                        <div class="list-item">
+                            <img src="./resources/images/list-tag.png" alt="list-tag" />
+                            <div class="list-content">
+                                Automatically refreshing metadata so your NFTs are up-to-date. </div>
+                        </div>
+                    </div>
+                    <!-- TODO -->
+                    <button class="wrapper-btn" onclick="">Learn from docs</button>
+                </div>
+                <img class="wrapper-img1" src="./resources/images/storage-plan.png" alt="Smart Contracts" />
+                <img class="wrapper-img2" src="./resources/images/nft-collection.png" alt="BAYC" />
             </div>
-            <div class="wrapper-item" id="item5" style="display: none;">
 
+            <div class="wrapper-item" id="item5">
+                <div class="wrapper-title">
+                    More features 
+                </div>
+                <div class="wrapper-imgs">
+                    <img src="./resources/images/10k-digital.png" alt="10k digital image generator" />
+                    <img src="./resources/images/multi-chain.png" alt="Multi-chain supported" />
+                    <img src="./resources/images/plugin-tools.png" alt="Plugin&Tools" />
+                </div>
             </div>
         </div>
         <div class="swiper-btn">
