@@ -1,37 +1,37 @@
 /* define font */
 @font-face {
     font-family: 'Urbanist';
-    src: url(./resources/fonts/Urbanist-Thin.ttf) format('truetype');
+    src: url(../fonts/Urbanist-Thin.ttf) format('truetype');
     font-weight: 200;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url(./resources/fonts/Urbanist-Light.ttf) format('truetype');
+    src: url(../fonts/Urbanist-Light.ttf) format('truetype');
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url(./resources/fonts/Urbanist-Regular.ttf) format('truetype');
+    src: url(../fonts/Urbanist-Regular.ttf) format('truetype');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url(./resources/fonts/Urbanist-Medium.ttf) format('truetype');
+    src: url(../fonts/Urbanist-Medium.ttf) format('truetype');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url(./resources/fonts/Urbanist-SemiBold.ttf) format('truetype');
+    src: url(../fonts/Urbanist-SemiBold.ttf) format('truetype');
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Urbanist';
-    src: url(./resources/fonts/Urbanist-Bold.ttf) format('truetype');
+    src: url(../fonts/Urbanist-Bold.ttf) format('truetype');
     font-weight: 700;
 }
 
@@ -96,18 +96,24 @@ button {
     height: 42px;
     left: 85.6%;
     top: 16px;
-    padding: 10px;
+    padding: 10px 0 10px 20px;
 
+    text-decoration: none;
     font-family: 'Urbanist';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    color: black;
 
     border: 1px solid black;
     border-radius: 21px;
 
     cursor: pointer;
+}
+
+.nav a:hover {
+    color: black;
 }
 
 /* title */
@@ -131,6 +137,7 @@ button {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
+    color: black;
 }
 
 .intro-description {
@@ -142,12 +149,13 @@ button {
     color: #696678;
 }
 
-.intro button {
+.intro a {
     padding: 20px 30px;
 
     width: 200px;
     height: 62px;
 
+    text-decoration: none;
     font-family: 'Urbanist';
     font-style: normal;
     font-weight: 700;
@@ -158,6 +166,10 @@ button {
     background: black;
     border-radius: 32px;
     border-color: black;
+}
+
+.intro a:hover {
+    color: white;
 }
 
 .NFT-list {
@@ -295,23 +307,21 @@ button {
     line-height: 48px;
 }
 
-.wrapper {
-    width: 87.5%;
-    background-color: #F0F0F5;
-    border-radius: 32px;
-
-    font-family: 'Urbanist';
-    font-style: normal;
-}
-
 .wrapper-item {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
-    width: 90.5%;
-    margin: 60px auto 81px;
+    width: 87.5%;
+    height: 550px;
+    margin: auto auto 81px;
+    padding: 0 4.7%;
+    background-color: #F0F0F5;
+    border-radius: 32px;
+
+    font-family: 'Urbanist';
+    font-style: normal;
 }
 
 .wrapper-left {
@@ -350,6 +360,7 @@ button {
 #item5 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -364,9 +375,11 @@ button {
     width: 31.5%;
 }
 
-/* .part4 {
-    margin: auto;   
-} */
+.part3-btn {
+    background-color: red;
+    width: 4%;
+    height: 4%;
+}
 
 .part4-content {
     width: 79.2%;
@@ -570,7 +583,6 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     width: 52.9%;
 
     font-weight: 400;
@@ -580,6 +592,10 @@ button {
 
 .footer-tab a {
     text-decoration: none;
+    color: black;
+}
+
+.footer-tab a:hover {
     color: black;
 }
 
